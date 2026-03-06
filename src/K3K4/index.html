@@ -5,26 +5,39 @@
     <title>Posaunen E3</title>
     <meta name="description" content="Infos über die Posaune, wie sie funktioniert und warum sie so tief klingt." >
     <meta name="author" content="Aaron Essig" >
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
 <header>
-    <h1>Posaunen</h1>
-    <nav aria-label="Navigation">
-        <ul>
-            <li><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="Bauweise.html">Bauweise & Technik</a></li>
-            <li><a href="FormsK4.html">Über mich</a></li>
-        </ul>
-        <br>
-        <ul>
-            <li><a href="Links.html">Links</a></li>
-            <li><a href="Bilder.html">Bilder</a></li>
-            <li><a href="Video.html">Video</a></li>
-            <li><a href="Musik.html">Musik</a></li>
-            <li><a href="iFrames.html">iFrames</a></li>
-
-        </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Posaune</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Bauweise.html">Bauweise</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Medien
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Bilder.html">Bild</a></li>
+                            <li><a class="dropdown-item" href="Video.html">Video</a></li>
+                            <li><a class="dropdown-item" href="Links.html">Links</a></li>
+                            <li><a class="dropdown-item" href="Musik.html">Musik</a></li>
+                            <li><a class="dropdown-item" href="iFrames.html">iFrames</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>
 
