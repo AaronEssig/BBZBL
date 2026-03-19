@@ -45,57 +45,64 @@
     <section>
         <h2>Schreib mir eine Nachricht</h2>
         <form action="https://gibm.becknet.ch/formular/formular.php" method="POST">
+            <fieldset>
+                <legend>Persönliche Daten</legend>
 
-            <label for="name">Dein Name *</label><br>
-            <input type="text" id="name" name="vorname" placeholder="Vorname Nachname" autofocus required minlength="2" maxlength="60">
-            <br><br>
+                <label for="name">Dein Name *</label><br>
+                <input type="text" id="name" name="vorname" placeholder="Vorname Nachname" autofocus required minlength="2" maxlength="60">
+                <br><br>
 
-            <label for="email">Deine E-Mail *</label><br>
-            <input type="email" id="email" name="email" placeholder="beispiel@mail.ch" required>
-            <br><br>
+                <label for="email">Deine E-Mail *</label><br>
+                <input type="email" id="email" name="email" placeholder="beispiel@mail.ch" required>
+                <br><br>
 
-            <label for="telefon">Telefon (07x xxx xx xx) *</label><br>
-            <input type="tel" id="telefon" name="telefon" pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="079 111 11 11" required>
-            <br><br>
+                <label for="telefon">Telefon (07x xxx xx xx) *</label><br>
+                <input type="tel" id="telefon" name="telefon" pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="079 111 11 11" required>
+                <br><br>
 
-            <label for="seite">Musikgesellschaft Harmonie Büsserach</label><br>
-            <input type="url" id="seite" name="seite" value="https://www.mghb.ch/" readonly>
-            <br><br>
+                <label for="seite">Musikgesellschaft Harmonie Büsserach</label><br>
+                <input type="url" id="seite" name="seite" value="https://www.mghb.ch/" readonly>
+                <br><br>
 
-            <label for="alter">Dein Alter</label><br>
-            <input type="number" id="alter" name="alter" min="1" max="120" value="18">
-            <br><br>
+                <label for="alter">Dein Alter</label><br>
+                <input type="number" id="alter" name="alter" min="1" max="120" value="18">
+                <br><br>
 
-            <label for="datum">Heute ist der</label><br>
-            <input type="date" id="datum" name="datum" value="2026-02-23">
-            <br><br>
+                <label for="datum">Geburtstag</label><br>
+                <input type="date" id="datum" name="datum" value="2026-03-20">
+                <br><br>
+            </fieldset>
 
-            <label for="thema">Dein Anliegen:</label><br>
-            <select id="thema" name="thema">
-                <option value="frage">Frage zur Posaune</option>
-                <option value="musik">Musikgesellschaft</option>
-                <option value="nichts" disabled>nichts</option>
-            </select>
-            <br><br>
+            <fieldset>
+                <legend>Musikalische Daten</legend>
 
-            <p>Spielst du auch ein Instrument?</p>
-            <input type="radio" id="ja" name="musiker" value="ja" required>
-            <label for="ja">Ja</label>
-            <input type="radio" id="nein" name="musiker" value="nein">
-            <label for="nein">Nein</label>
-            <br><br>
+                <label for="thema">Dein Anliegen:</label><br>
+                <select id="thema" name="thema">
+                    <option value="frage">Frage zur Posaune</option>
+                    <option value="musik">Musikgesellschaft</option>
+                    <option value="nichts" disabled>nichts</option>
+                </select>
+                <br><br>
 
-            <p>Welche Musik magst du?</p>
-            <input type="checkbox" id="jazz" name="stil" value="jazz">
-            <label for="jazz">Jazz</label><br>
-            <input type="checkbox" id="klassik" name="stil" value="klassik">
-            <label for="klassik">Klassik</label><br>
-            <input type="checkbox" id="andere" name="stil" value="andere">
-            <label for="andere">Andere</label>
-            <br><br>
+                <p>Spielst du auch ein Instrument?</p>
+                <input type="radio" id="ja" name="musiker" value="ja" required>
+                <label for="ja">Ja</label>
+                <input type="radio" id="nein" name="musiker" value="nein">
+                <label for="nein">Nein</label>
+                <br><br>
 
-            <label for="nachricht">Deine Nachricht:</label><br>
-            <textarea id="nachricht" name="nachricht" rows="5" cols="40" placeholder="Hallo, ich wollte mal fragen..."></textarea>
+                <p>Welche Musik magst du?</p>
+                <input type="checkbox" id="jazz" name="stil" value="jazz">
+                <label for="jazz">Jazz</label><br>
+                <input type="checkbox" id="klassik" name="stil" value="klassik">
+                <label for="klassik">Klassik</label><br>
+                <input type="checkbox" id="andere" name="stil" value="andere">
+                <label for="andere">Andere</label>
+                <br><br>
+
+                <label for="nachricht">Deine Nachricht:</label><br>
+                <textarea id="nachricht" name="nachricht" rows="5" cols="40" placeholder="Hallo, ich wollte mal fragen..."></textarea>
+            </fieldset>
             <br><br>
 
             <button type="submit">Nachricht senden</button>
