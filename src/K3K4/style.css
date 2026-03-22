@@ -6,11 +6,13 @@
 }
 
 body {
-    line-height: 1.6;
+    line-height: 1.6rem;
     color: #333;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+
+
 }
 
 header {
@@ -25,7 +27,7 @@ main {
     background: var(--backgound-color);
     border-radius: 8px;
 
-    /* Nesting für Elemente innerhalb von main */
+
     .fakten {
         display: flex;
         flex-wrap: wrap;
